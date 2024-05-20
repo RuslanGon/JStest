@@ -1,3 +1,5 @@
+// <!-- 1 task -->
+
 const button = document.querySelector('.btn')
 console.log(button);
 const menu = document.querySelector('.second-div')
@@ -10,3 +12,5 @@ button.addEventListener('click', () => {
         menu.classList.add('disp')
     }
 })
+
+// <!-- 1 task -->
