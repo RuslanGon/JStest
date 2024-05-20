@@ -5,6 +5,7 @@
 
 .btn{
     margin-right: 120px;
+    
 }
 
 .second-div{
@@ -15,3 +16,30 @@ gap: 20px;
 .disp{
     display: none;
 }
+
+/* <!-- 2 task --> */
+ .list {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    
+ }
+
+ .link {
+    text-decoration: none;
+    color: #000;
+ }
+
+ a:hover {
+    color: red;
+ }
+
+ .list1 {
+    list-style-type: none;
+    margin-left: -40px;
+    display: none;
+ }
+
+ .show {
+    display: block;
+ }
