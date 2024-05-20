@@ -1,3 +1,5 @@
+
+/* // <!-- 1 task --> */
 .main-div {
     display: flex;
 
@@ -16,6 +18,8 @@ gap: 20px;
 .disp{
     display: none;
 }
+
+/* // <!-- 1 task --> */
 
 /* <!-- 2 task --> */
  .list {
@@ -43,3 +47,5 @@ gap: 20px;
  .show {
     display: block;
  }
+
+ /* // <!-- 2 task --> */
