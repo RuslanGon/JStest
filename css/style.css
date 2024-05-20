@@ -1,4 +1,17 @@
 .main-div {
     display: flex;
-    
+
+}
+
+.btn{
+    margin-right: 120px;
+}
+
+.second-div{
+display: flex;
+gap: 20px;
+}
+
+.disp{
+    display: none;
 }
