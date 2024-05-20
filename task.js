@@ -1,6 +1,6 @@
-const button = document.querySelector('#burger')
+const button = document.querySelector('.btn')
 console.log(button);
-const menu = document.querySelector('#menu')
+const menu = document.querySelector('.second-div')
 console.log(menu);
 
 button.addEventListener('click', () => {
