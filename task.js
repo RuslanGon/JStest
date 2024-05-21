@@ -41,14 +41,6 @@ document.querySelectorAll('.item').forEach(item => {
     // <!-- 2 task -->
 
     // <!-- 3 task -->
-
-    // const one = document.querySelector('.one')
-    // const red = document.querySelector('.red')
-    // const blue = document.querySelector('.blue')
-    // const black = document.querySelector('.black')
-    // const green = document.querySelector('.green')
-
-
     
     const divs = document.querySelectorAll('.one > div');
 

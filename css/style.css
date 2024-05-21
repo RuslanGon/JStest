@@ -98,3 +98,20 @@ gap: 20px;
  }
 
  /* <!-- 3 task --> */
+
+ /* <!-- 4 task --> */
+
+ .div-text {
+  width: 700px;
+  overflow: hidden; /* Скрыть часть текста, которая не помещается в div */
+}
+ 
+.text {
+  animation: marquee 5s linear infinite; /* Назначаем анимацию */
+  white-space: nowrap; /* Запрещаем перенос текста */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(70%); } /* Начальное положение текста за пределами видимой области */
+  100% { transform: translateX(-100%); } /* Конечное положение текста за пределами видимой области */
+}
