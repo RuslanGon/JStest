@@ -5,13 +5,17 @@ const button = document.querySelector('.btn')
 const menu = document.querySelector('.second-div')
 
 
+// button.addEventListener('click', () => {
+//     if(menu.classList.contains('disp') == true) {
+//             menu.classList.remove('disp')
+//     } else {
+//         menu.classList.add('disp')
+//     }
+// })
+
 button.addEventListener('click', () => {
-    if(menu.classList.contains('disp') == true) {
-        menu.classList.remove('disp')
-    } else {
-        menu.classList.add('disp')
-    }
-})
+    menu.classList.toggle('disp')
+} )
 
 // <!-- 1 task -->
 
