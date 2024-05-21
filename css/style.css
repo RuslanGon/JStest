@@ -107,7 +107,7 @@ gap: 20px;
 }
  
 .text {
-  animation: marquee 5s linear infinite; /* Назначаем анимацию */
+  animation: marquee 15s linear infinite; /* Назначаем анимацию */
   white-space: nowrap; /* Запрещаем перенос текста */
 }
 
