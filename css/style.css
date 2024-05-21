@@ -75,7 +75,7 @@ gap: 20px;
    height: 100px;
    background-color: blue;
    position: absolute;
-   left: 350px;
+   left: 250px;
    top: 100px;
  }
 
@@ -86,4 +86,13 @@ gap: 20px;
    position: absolute;
    left: 350px;
    top: 200px;
+ }
+
+ .green {
+   width: 100px;
+   height: 100px;
+   background-color: green;
+   position: absolute;
+   left: 450px;
+   top: 100px;
  }
