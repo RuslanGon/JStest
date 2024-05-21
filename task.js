@@ -39,3 +39,31 @@ document.querySelectorAll('.item').forEach(item => {
     });
 
     // <!-- 2 task -->
+
+    // <!-- 3 task -->
+
+    // const one = document.querySelector('.one')
+    // const red = document.querySelector('.red')
+    // const blue = document.querySelector('.blue')
+    // const black = document.querySelector('.black')
+    // const green = document.querySelector('.green')
+
+
+    
+    const divs = document.querySelectorAll('.one > div');
+
+    // Добавляем обработчик события для каждого div
+    divs.forEach(div => {
+        div.addEventListener('click', function() {
+            // Скрываем текущий div
+            div.style.display = 'none';
+            setTimeout(() => {
+                div.style.display = 'block';
+            }, 1000);
+
+        });
+    });
+
+
+
+   
