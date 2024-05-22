@@ -309,10 +309,21 @@ function renderProducts (products) {
 const backdrop = document.querySelector('.backdrop')
 const btnmodal = document.querySelector('.btn-modal')
 const container = document.querySelector('.container')
+const modal = document.querySelector('.modal')
 
 container.addEventListener('click', (e) => {
   if(e.target.nodeName !== 'BUTTON') return
 showmodal()
+})
+
+backdrop.addEventListener('click', (e) => {
+  if(e.target === e.currentTarget)
+  hidemodal()
+})
+
+
+modal.addEventListener('click', (e)=> {
+e.stopPropagation()
 })
 
 
