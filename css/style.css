@@ -115,3 +115,23 @@ gap: 20px;
   0% { transform: translateX(70%); } /* Начальное положение текста за пределами видимой области */
   100% { transform: translateX(-100%); } /* Конечное положение текста за пределами видимой области */
 }
+
+/* <!-- 4 task --> */
+
+/* <!-- 6 task --> */
+
+.item-product {
+display: flex;
+flex-direction: column; 
+align-items: center;
+border: 2px solid black;
+border-radius: 10px;
+padding:20px;
+width: 400px;
+}
+
+.img-product {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}

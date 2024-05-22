@@ -263,7 +263,17 @@ document.querySelectorAll('.item').forEach(item => {
           ]
         }
     ]
-        
 
+    const elements = {
+        form: document.querySelector('.js-search-form'),
+        container: document.querySelector('.js-list')
+    }
+        
+elements.form.addEventListener('submit', (e) => {
+e.preventDefault()
+const value = e.target.elements.query.value
+const type = e.target.elements.options.value
+console.log(type);
+})
 
    
