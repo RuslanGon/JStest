@@ -334,3 +334,9 @@ backdrop.classList.add('show-modal')
 function hidemodal () {
 backdrop.classList.remove('show-modal')
 }
+
+document.addEventListener('keydown', (e) => {
+if(e.code === 'Escape'){
+  hidemodal()
+}
+})
