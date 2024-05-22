@@ -81,7 +81,7 @@ document.querySelectorAll('.item').forEach(item => {
 
     // <!-- 6 task -->
 
-    products: [
+    const products = [
         {
           "id": 1,
           "title": "iPhone 9",
@@ -273,13 +273,14 @@ elements.form.addEventListener('submit', (e) => {
 e.preventDefault()
 const value = e.target.elements.query.value
 const type = e.target.elements.options.value
-const filterProducts = products.filter((product) => {
+const filterProductsArr = products.filter((product) => {
     if(type === 'brand'){
         return product.brand.includes(value)
     } else {
         return product.title.includes(value)
     }
 })
+console.log(filterProductsArr);
 })
 
    
