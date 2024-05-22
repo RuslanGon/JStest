@@ -303,3 +303,5 @@ function renderProducts (products) {
 }
 
 // <!-- 6 task --> 
+
+// <!-- 7 task -->
