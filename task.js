@@ -297,8 +297,9 @@ function productTemplate (product) {
     `
 }
    
-
 function renderProducts (products) {
     const  markup = products.map(productTemplate).join('')
     elements.container.innerHTML = markup
 }
+
+// <!-- 6 task -->
