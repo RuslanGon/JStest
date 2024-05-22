@@ -302,4 +302,4 @@ function renderProducts (products) {
     elements.container.innerHTML = markup
 }
 
-// <!-- 6 task -->
+// <!-- 6 task --> 
