@@ -305,3 +305,21 @@ function renderProducts (products) {
 // <!-- 6 task --> 
 
 // <!-- 7 task -->
+
+const backdrop = document.querySelector('.backdrop')
+const btnmodal = document.querySelector('.btn-modal')
+const container = document.querySelector('.container')
+
+container.addEventListener('click', (e) => {
+  if(e.target.nodeName !== 'BUTTON') return
+showmodal()
+})
+
+
+function showmodal (e) {
+backdrop.classList.add('show-modal')
+}
+
+function hidemodal () {
+backdrop.classList.remove('show-modal')
+}
