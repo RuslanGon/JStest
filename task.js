@@ -274,13 +274,31 @@ e.preventDefault()
 const value = e.target.elements.query.value
 const type = e.target.elements.options.value
 const filterProductsArr = products.filter((product) => {
+    // return product[type].includes(value)
     if(type === 'brand'){
         return product.brand.includes(value)
     } else {
         return product.title.includes(value)
     }
 })
-console.log(filterProductsArr);
+renderProducts(filterProductsArr)
 })
 
+
+function productTemplate (product) {
+    return `
+    <li class="item-product">
+        <p>${product.title} ${product.brand}</p>
+        <p>${product.price}</p>
+        <p>${product.rating}</p>
+        <p>${product.category}</p>
+        <img src="${product.thumbnail}" alt="" width="350" height="200">
+    </li>
+    `
+}
    
+
+function renderProducts (products) {
+    const  markup = products.map(productTemplate).join('')
+    elements.container.innerHTML = markup
+}
