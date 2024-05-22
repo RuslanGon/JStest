@@ -56,6 +56,26 @@ document.querySelectorAll('.item').forEach(item => {
         });
     });
 
+    // <!-- 3 task -->
+
+    // <!-- 5 task -->
+
+    const form = document.querySelector('.js-form')
+
+    form.addEventListener('submit', onFormSubmit)
+
+    function onFormSubmit(event) {
+      event.preventDefault();
+      const email = form.elements.email.value;
+      const name = form.elements.name.value;
+      const textera = form.elements.comment.value;
+
+      const userData = {
+        email, name, textera
+      }
+      form.reset()
+      console.log(userData);
+    }
 
 
    
