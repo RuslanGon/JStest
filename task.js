@@ -273,7 +273,13 @@ elements.form.addEventListener('submit', (e) => {
 e.preventDefault()
 const value = e.target.elements.query.value
 const type = e.target.elements.options.value
-console.log(type);
+const filterProducts = products.filter((product) => {
+    if(type === 'brand'){
+        return product.brand.includes(value)
+    } else {
+        return product.title.includes(value)
+    }
+})
 })
 
    
