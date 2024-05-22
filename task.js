@@ -288,10 +288,10 @@ renderProducts(filterProductsArr)
 function productTemplate (product) {
     return `
     <li class="item-product">
-        <p>${product.title} ${product.brand}</p>
-        <p>${product.price}</p>
-        <p>${product.rating}</p>
-        <p>${product.category}</p>
+        <p><b>Name: ${product.title} ${product.brand}</b></p>
+        <p> Price: ${product.price}</p>
+        <p> Rating: ${product.rating}</p>
+        <p> Category: ${product.category}</p>
         <img src="${product.thumbnail}" alt="" width="350" height="200">
     </li>
     `
