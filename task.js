@@ -321,22 +321,22 @@ backdrop.addEventListener('click', (e) => {
   hidemodal()
 })
 
-
 modal.addEventListener('click', (e)=> {
 e.stopPropagation()
 })
 
-
 function showmodal (e) {
 backdrop.classList.add('show-modal')
+document.addEventListener('keydown', onCloseModalEsc)
 }
 
 function hidemodal () {
 backdrop.classList.remove('show-modal')
+document.removeEventListener('keydown', onCloseModalEsc)
 }
 
-document.addEventListener('keydown', (e) => {
-if(e.code === 'Escape'){
-  hidemodal()
+function onCloseModalEsc (e) {
+  if(e.code === 'Escape'){
+    hidemodal()
+  }
 }
-})
