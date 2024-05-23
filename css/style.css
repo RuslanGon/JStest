@@ -190,3 +190,12 @@ visibility: visible;
   border-radius: 10px;
 
 }
+
+
+.backdrop.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
