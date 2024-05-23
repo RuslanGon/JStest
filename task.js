@@ -343,6 +343,7 @@ function onCloseModalEsc (e) {
   }
 }
 
+
 close.addEventListener('click', () => {
   backdrop.classList.remove('show-modal')
 })
