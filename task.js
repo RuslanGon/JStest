@@ -312,6 +312,9 @@ const btnmodal = document.querySelector('.btn-modal')
 const container = document.querySelector('.container')
 const modal = document.querySelector('.modal')
 const close = document.querySelector('.js-close')
+const closeX = document.querySelector('.div-close')
+
+
 
 container.addEventListener('click', (e) => {
   if(e.target.nodeName !== 'BUTTON') return
@@ -344,9 +347,12 @@ function onCloseModalEsc (e) {
   }
 }
 
-
 close.addEventListener('click', () => {
   backdrop.classList.remove('show-modal')
+})
+
+closeX.addEventListener('click', () => {
+backdrop.classList.remove('show-modal')
 })
 
 // <!-- 7 task -->
