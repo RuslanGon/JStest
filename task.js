@@ -393,17 +393,46 @@ productsList.addEventListener('click', (e) => {
         thumbnail: liElem.dataset.thumbnail
     };
 
-    const instance = basicLightbox.create(`
+    const instance = basicLightbox.create(
+      `
         <div class="modal">
             <img src="${item.thumbnail}" alt="" width="300" height="300">
             <h2>name: ${item.title}</h2>
             <h3>rating: ${item.rating}</h3>
             <h4>category: ${item.category}</h4>
             <p><b>price: ${item.price}</b></p>
+            <button>Close</button>
         </div>
-    `, {
-        // onShow: (instance) => {}
-    });
+    `,
+      {
+        /*
+         * Function that gets executed before the lightbox will be shown.
+         * Returning false will prevent the lightbox from showing.
+         */
+        onShow: (instance) => {
+          const escListener = (e) => ModalEsc(e, instance);
+          window.addEventListener('keydown', escListener);
+          instance.element().querySelector("button").onclick = instance.close;
+          instance.escListener = escListener;
+
+        },
+        /*
+         * Function that gets executed before the lightbox closes.
+         * Returning false will prevent the lightbox from closing.
+         */
+        onClose: (instance) => {
+          // instance.element().querySelector('a').onclick = instance.close
+        },
+      },
+
+    
+    );
+
+    function ModalEsc(e, instance) {
+      if (e.code === 'Escape') {
+          instance.close();
+      }
+  }
 
     instance.show();
 });
