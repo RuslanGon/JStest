@@ -357,12 +357,11 @@ const productsList = document.querySelector('.products-list')
 
 const instance = basicLightbox.create(`
     <div class="modal">
-        <p class="text1">
-            Your first lightbox with just a few lines of code.
-            Yes, it's really that simple.
-        </p>
+       <h1>Hello word</h1>
     </div>
-`)
+`, {
+    onShow: (instance) => {}
+})
 
 instance.show()
 
