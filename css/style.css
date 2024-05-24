@@ -218,6 +218,13 @@ visibility: visible;
   cursor: pointer;
 }
 
+.modal {
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
 
 
 

@@ -1,4 +1,5 @@
 // <!-- 1 task -->
+// import { products } from "./arrya"
 
 const button = document.querySelector('.btn')
 
@@ -353,30 +354,60 @@ close.addEventListener('click', () => {
 // <!-- 8 task -->
 
 
-const productsList = document.querySelector('.products-list')
+const productsList = document.querySelector('.products-list');
 
-// const instance = basicLightbox.create(`
-//     <div class="modal">
-//        <h1>Hello word</h1>
-//     </div>
-// `, {
-//     onShow: (instance) => {}
-// })
-
-// instance.show()
-
-
-function productTemplate (item) {
-  return `
-  <li class="product-item">
-  <img src="${item.thumbnail}" alt="" width="300" height="300">
-  <h2>name: ${item.name}</h2>
-  <h3>rating: ${item.rating}</h3>
-  <h4>category: ${item.category}</h4>
-  <p><b>price: ${item.price}</b></p>
-</li>
-  `
+function productTemplate(item) {
+    return `
+        <li class="product-item" data-title="${item.title}" data-rating="${item.rating}" data-category="${item.category}" data-price="${item.price}" data-thumbnail="${item.thumbnail}">
+            <img src="${item.thumbnail}" alt="" width="300" height="300">
+            <h2>name: ${item.title}</h2>
+            <h3>rating: ${item.rating}</h3>
+            <h4>category: ${item.category}</h4>
+            <p><b>price: ${item.price}</b></p>
+        </li>
+    `;
 }
+
+function productListTemplate(products) {
+    const markup = products.map(productTemplate).join('');
+    return markup;
+}
+
+function render() {
+    const markup = productListTemplate(products);
+    productsList.innerHTML = markup;
+}
+
+render();
+
+productsList.addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) return;
+
+    const liElem = e.target.closest('li');
+
+    const item = {
+        title: liElem.dataset.title,
+        rating: liElem.dataset.rating,
+        category: liElem.dataset.category,
+        price: liElem.dataset.price,
+        thumbnail: liElem.dataset.thumbnail
+    };
+
+    const instance = basicLightbox.create(`
+        <div class="modal">
+            <img src="${item.thumbnail}" alt="" width="300" height="300">
+            <h2>name: ${item.title}</h2>
+            <h3>rating: ${item.rating}</h3>
+            <h4>category: ${item.category}</h4>
+            <p><b>price: ${item.price}</b></p>
+        </div>
+    `, {
+        onShow: (instance) => {}
+    });
+
+    instance.show();
+});
+
 
 
 
