@@ -355,15 +355,15 @@ close.addEventListener('click', () => {
 
 const productsList = document.querySelector('.products-list')
 
-const instance = basicLightbox.create(`
-    <div class="modal">
-       <h1>Hello word</h1>
-    </div>
-`, {
-    onShow: (instance) => {}
-})
+// const instance = basicLightbox.create(`
+//     <div class="modal">
+//        <h1>Hello word</h1>
+//     </div>
+// `, {
+//     onShow: (instance) => {}
+// })
 
-instance.show()
+// instance.show()
 
 
 
