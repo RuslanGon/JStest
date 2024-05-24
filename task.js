@@ -414,12 +414,7 @@ productsList.addEventListener('click', (e) => {
           window.addEventListener('keydown', escListener);
           instance.element().querySelector("button").onclick = instance.close;
           instance.escListener = escListener;
-
         },
-        /*
-         * Function that gets executed before the lightbox closes.
-         * Returning false will prevent the lightbox from closing.
-         */
         onClose: (instance) => {
           // instance.element().querySelector('a').onclick = instance.close
         },
