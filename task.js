@@ -288,7 +288,7 @@ renderProducts(filterProductsArr)
 
 function productTemplate (product) {
     return `
-    <li class="item-product">
+    <li class="item-product pro">
         <p><b>Name: ${product.title} ${product.brand}</b></p>
         <p> Price: ${product.price}</p>
         <p> Rating: ${product.rating}</p>
@@ -402,7 +402,7 @@ productsList.addEventListener('click', (e) => {
             <p><b>price: ${item.price}</b></p>
         </div>
     `, {
-        onShow: (instance) => {}
+        // onShow: (instance) => {}
     });
 
     instance.show();
