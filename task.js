@@ -360,7 +360,7 @@ function productTemplate(item) {
     return `
         <li class="product-item" data-title="${item.title}" data-rating="${item.rating}" data-category="${item.category}" data-price="${item.price}" data-thumbnail="${item.thumbnail}">
             <img src="${item.thumbnail}" alt="" width="300" height="300">
-            <h2>name: ${item.title}</h2>
+            <h2>${item.title}</h2>
             <h3>rating: ${item.rating}</h3>
             <h4>category: ${item.category}</h4>
             <p><b>price: ${item.price}</b></p>
@@ -397,7 +397,7 @@ productsList.addEventListener('click', (e) => {
       `
         <div class="modal">
             <img src="${item.thumbnail}" alt="" width="300" height="300">
-            <h2>name: ${item.title}</h2>
+            <h2>${item.title}</h2>
             <h3>rating: ${item.rating}</h3>
             <h4>category: ${item.category}</h4>
             <p><b>price: ${item.price}</b></p>
