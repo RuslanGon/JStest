@@ -366,6 +366,18 @@ const productsList = document.querySelector('.products-list')
 // instance.show()
 
 
+function productTemplate (item) {
+  return `
+  <li class="product-item">
+  <img src="${item.thumbnail}" alt="" width="300" height="300">
+  <h2>name: ${item.name}</h2>
+  <h3>rating: ${item.rating}</h3>
+  <h4>category: ${item.category}</h4>
+  <p><b>price: ${item.price}</b></p>
+</li>
+  `
+}
+
 
 
 
