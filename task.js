@@ -425,7 +425,6 @@ productsList.addEventListener('click', (e) => {
         },
       },
 
-    
     );
 
     function ModalEsc(e, instance) {
