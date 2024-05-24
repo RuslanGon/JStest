@@ -405,10 +405,6 @@ productsList.addEventListener('click', (e) => {
         </div>
     `,
       {
-        /*
-         * Function that gets executed before the lightbox will be shown.
-         * Returning false will prevent the lightbox from showing.
-         */
         onShow: (instance) => {
           const escListener = (e) => ModalEsc(e, instance);
           window.addEventListener('keydown', escListener);
