@@ -150,7 +150,7 @@ padding:20px;
 /* <!-- 7 task --> */
 
 .backdrop {
-
+position: fixed;
 left: 0;
 right: 0;
 /* top: 0; */
@@ -165,9 +165,11 @@ width: 70vw;
 height: 130vh;
 padding: 10px 10px;
 margin: 0;
+z-index: 999;
 }
 
 .modal {
+  position: relative;
   min-width: 300px;
   min-height: 300px;
   background-color: white;
@@ -208,8 +210,9 @@ visibility: visible;
   height: 35px;
   border: 2px solid black;
   border-radius: 50%;
-  margin-left: 350px;
-  margin-top: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .btn-close {
@@ -219,12 +222,27 @@ visibility: visible;
   width: 100%;
   height: 100%;
   border: none;
-  background-color: white;
   cursor: pointer;
+  background: none;
+ 
 }
 
 .close-img {
   width: 15px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+.textarea {
+  height: 100px;
+  width: 140px;
+  margin-top: 20px;
+}
+
+.form {
+  padding-top: 150px;
 }
 
 
