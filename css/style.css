@@ -272,6 +272,29 @@ input:focus, textarea:focus {
   text-align: center;
 }
 
+/* <!-- 8 task --> */
 
+/* <!-- 9 task --> */
 
+.input-ls{
+  width: 200px;
+  height: 20px;
+}
 
+.texteriea-ls{
+  width: 200px;
+  height: 70px;
+}
+
+.btn-ls{
+  width: 120px;
+  height: 25px;
+
+  background-color: rgba(40, 165, 224, 0.777);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16pxpx;
+  margin-top: 10px;
+  margin-left: 35px;
+
+}
