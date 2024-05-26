@@ -437,20 +437,24 @@ productsList.addEventListener('click', (e) => {
 
 // <!-- 9 Local storage task -->
 
-function saveToLS (key='empty', value='') {
-const jsonData = JSON.stringify(value)
-localStorage.setItem(key, jsonData)
-}
+// function saveToLS (key='empty', value='') {
+// const jsonData = JSON.stringify(value)
+// localStorage.setItem(key, jsonData)
+// }
 
-function loadFromLS (key) {
-const data = localStorage.getItem(key)
-try{
-const result = JSON.parse(data)
-return result
-} catch {
-return data
-}
-}
+// function loadFromLS(key) {
+//   const data = localStorage.getItem(key);
+//   try {
+//     const result = JSON.parse(data);
+//     return result;
+//   } catch {
+//     return data;
+//   }
+// }
+
+const STORAGE_KEY = 'feedback -msg'
+const formLS = document.querySelector('.form-ls')
+const textereaLS = document.querySelector('.texteriea-ls')
 
 
 
