@@ -433,7 +433,24 @@ productsList.addEventListener('click', (e) => {
     instance.show();
 });
 
+// <!-- 8 task -->
 
+// <!-- 9 Local storage task -->
+
+function saveToLS (key='empty', value='') {
+const jsonData = JSON.stringify(value)
+localStorage.setItem(key, jsonData)
+}
+
+function loadFromLS (key) {
+const data = localStorage.getItem(key)
+try{
+const result = JSON.parse(data)
+return result
+} catch {
+return data
+}
+}
 
 
 
