@@ -437,9 +437,9 @@ productsList.addEventListener('click', (e) => {
 
 // <!-- 9 Local storage task -->
 
-function saveToLS (key='empty', value='') {
-const jsonData = JSON.stringify(value)
-localStorage.setItem(key, jsonData)
+function saveToLS(key = 'empty', value = '') {
+  const jsonData = JSON.stringify(value);
+  localStorage.setItem(key, jsonData);
 }
 
 function loadFromLS(key) {
@@ -452,21 +452,32 @@ function loadFromLS(key) {
   }
 }
 
-const STORAGE_KEY = 'feedback -msg'
-const formLS = document.querySelector('.form-ls')
-const textereaLS = document.querySelector('.texteriea-ls')
+const STORAGE_KEY = 'feedback-msg';
+const formLS = document.querySelector('.form-ls');
+const textareaLS = document.querySelector('.textarea-ls');
 
-formLS.addEventListener('input', (e) => {
-const userName = formLS.elements.name.value
-const userMessage = formLS.elements.textarea.value
+formLS.addEventListener('input', () => {
+  const userName = formLS.elements.name.value;
+  const userMessage = formLS.elements.message.value;
 
-const data = {
-name: userName,
-message: userMessage
+  const data = {
+    name: userName,
+    message: userMessage
+  };
+  saveToLS(STORAGE_KEY, data);
+});
+
+function restoreData() {
+  const data = loadFromLS(STORAGE_KEY) || {};
+
+  formLS.elements.name.value = data.name || "Anonymus";
+  formLS.elements.message.value = data.message || "";
 }
-saveToLS(STORAGE_KEY, data)
-})
 
+restoreData()
+
+// Вызов функции восстановления данных при загрузке страницы
+// document.addEventListener('DOMContentLoaded', restoreData);
 
 
 
