@@ -464,6 +464,7 @@ formLS.addEventListener("submit", (e) => {
   console.log(data);
 });
 
+
 formLS.addEventListener('input', () => {
   const userName = formLS.elements.name.value;
   const userMessage = formLS.elements.message.value;
@@ -483,8 +484,6 @@ function restoreData() {
 }
 
 restoreData()
-
-
 
 // Вызов функции восстановления данных при загрузке страницы
 // document.addEventListener('DOMContentLoaded', restoreData);
