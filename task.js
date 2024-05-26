@@ -488,5 +488,7 @@ restoreData()
 // Вызов функции восстановления данных при загрузке страницы
 // document.addEventListener('DOMContentLoaded', restoreData);
 
+// <!-- 9 task -->
+
 
 
