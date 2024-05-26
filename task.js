@@ -456,6 +456,14 @@ const STORAGE_KEY = 'feedback-msg';
 const formLS = document.querySelector('.form-ls');
 const textareaLS = document.querySelector('.textarea-ls');
 
+formLS.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const data = loadFromLS(STORAGE_KEY) || {};
+  formLS.reset();
+  localStorage.removeItem(STORAGE_KEY);
+  console.log(data);
+});
+
 formLS.addEventListener('input', () => {
   const userName = formLS.elements.name.value;
   const userMessage = formLS.elements.message.value;
@@ -475,6 +483,8 @@ function restoreData() {
 }
 
 restoreData()
+
+
 
 // Вызов функции восстановления данных при загрузке страницы
 // document.addEventListener('DOMContentLoaded', restoreData);
