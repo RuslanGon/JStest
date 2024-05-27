@@ -337,7 +337,7 @@ margin: 0;
     border: 2px solid white;
 }
 
-.link-sicial:focus {
+.link-sicial:hover {
   color: #f00; 
 }
 
