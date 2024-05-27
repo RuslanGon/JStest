@@ -1,5 +1,6 @@
+// import { products } from "./products"
+
 // <!-- 1 task -->
-// import { products } from "./arrya"
 
 const button = document.querySelector('.btn')
 
