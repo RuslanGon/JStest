@@ -334,6 +334,7 @@ margin: 0;
     height: 50px; 
     border-radius: 50%; 
     background-color: rgb(43, 39, 39); 
+    border: 2px solid white;
 }
 
 .link-sicial:focus {
