@@ -491,5 +491,15 @@ restoreData()
 
 // <!-- 9 task -->
 
+// <!-- 11 task -->
 
+const id = setInterval(() => {
+  console.log('Hello word');
+}, 1000)
+
+
+
+setTimeout(() => {
+  clearTimeout(id)
+},5000)
 
