@@ -342,3 +342,22 @@ margin: 0;
   height: 24px; 
 }
 
+/* <!-- 10 task --> */
+
+/* <!-- 11 task --> */
+
+.div-set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(16, 116, 224);
+  border-radius: 10px;
+  border: 4px solid black;
+  color: white;
+  text-align: center;
+}
+
+
