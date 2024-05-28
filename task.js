@@ -531,7 +531,7 @@ setTimeout(hideDiv,5000)
 
 const starBtn = document.querySelector('.start-btn')
 const container1 = document.querySelector('.main-container')
-const result =document.querySelector('.result')
+const resultEl =document.querySelector('.result')
 
 function createPromise(delay) {
   const promise = new Promise((resolve, reject) => {
@@ -569,7 +569,14 @@ function onStartBtnClick() {
     result = result.map(el => {
       return el.reason || el.value
     })
-    console.log(result);
+    // console.log(result);
+    const isWin = result.every(el => el === "😄")
+    
+    if(isWin){
+      resultEl.textContent = '😄 You win 😄'
+    } else {
+      resultEl.textContent = '😡 You loss 😡'
+    }
   } )
 
 
