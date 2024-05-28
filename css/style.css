@@ -360,4 +360,7 @@ margin: 0;
   text-align: center;
 }
 
+.is-visible {
+  display: none;
+}
 

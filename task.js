@@ -493,11 +493,25 @@ restoreData()
 
 // <!-- 11 task -->
 
-const id = setInterval(() => {
-  console.log('Hello word');
-}, 1000)
+// const id = setInterval(() => {
+//   console.log('Hello word');
+// }, 1000)
+
+// setTimeout(() => {
+//   clearTimeout(id)
+// },5000)
+
+const divSet = document.querySelector('.div-set')
+console.log(divSet);
+
+const id =  setInterval(() => {
+  divSet.classList.toggle('is-visible')
+},1000)
 
 setTimeout(() => {
-  clearTimeout(id)
-},5000)
+  clearInterval(id)
+},7000)
+
+
+
 
