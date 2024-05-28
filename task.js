@@ -525,5 +525,52 @@ function hideDiv () {
 setTimeout(showDiv, 1000)
 setTimeout(hideDiv,5000)
 
+/* <!-- 11 task --> */
+
+/* <!-- 12 task --> */
+
+const starBtn = document.querySelector('.start-btn')
+const container1 = document.querySelector('.main-container')
+const result =document.querySelector('.result')
+
+function createPromise(delay) {
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const isActive = Math.random() > 0.5;
+      if (isActive) {
+        resolve("😄");
+      } else {
+        reject("😡");
+      }
+    }, delay);
+  });
+  return promise
+}
+
+starBtn.addEventListener('click', onStartBtnClick) 
+
+function onStartBtnClick() {
+  const promises = [];
+  const COUNT = 3;
+  for (let i = 0; i < COUNT; i++) {
+    container1.children[i].textContent = ''
+    const promise = createPromise((i + 1) * 100);
+    promises.push(promise)
+    promise
+      .then((smile) => {
+        container1.children[i].textContent = smile;
+      })
+      .catch((smile) => {
+        container1.children[i].textContent = smile;
+      });
+  }
+
+  Promise.allSettled(promises).then(result => {
+    result = result.map(el => {
+      return el.reason || el.value
+    })
+    console.log(result);
+  } )
 
 
+}
