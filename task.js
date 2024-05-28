@@ -502,16 +502,28 @@ restoreData()
 // },5000)
 
 const divSet = document.querySelector('.div-set')
-console.log(divSet);
+// console.log(divSet);
 
-const id =  setInterval(() => {
-  divSet.classList.toggle('is-visible')
-},1000)
+// const id =  setInterval(() => {
+//   divSet.classList.toggle('is-visible')
+// },1000)
 
-setTimeout(() => {
-  clearInterval(id)
-},7000)
+// setTimeout(() => {
+//   clearInterval(id)
+// },7000)
 
+// ======================================
+
+function showDiv () {
+  divSet.classList.add('is-visible')
+}
+
+function hideDiv () {
+  divSet.classList.remove('is-visible')
+}
+
+setTimeout(showDiv, 1000)
+setTimeout(hideDiv,5000)
 
 
 
