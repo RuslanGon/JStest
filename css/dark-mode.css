@@ -1,4 +1,426 @@
-.wrapper {
+body {
+    background-color: rgb(191, 183, 183);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  /* // <!-- 1 task --> */
+  .main-div {
+      display: flex;
+  
+  }
+  
+  .btn{
+      margin-right: 120px;
+      
+  }
+  
+  .second-div{
+  display: flex;
+  gap: 20px;
+  }
+  
+  .disp{
+      display: none;
+  }
+  
+  /* // <!-- 1 task --> */
+  
+  /* <!-- 2 task --> */
+  
+   .list {
+      display: flex;
+      gap: 15px;
+      list-style-type: none;
+      
+   }
+  
+   .link {
+      text-decoration: none;
+      color: #000;
+   }
+  
+   a:hover {
+      color: red;
+   }
+  
+   .list1 {
+      list-style-type: none;
+      margin-left: -40px;
+      display: none;
+   }
+  
+   .show {
+      display: block;
+   }
+  
+   /* // <!-- 2 task --> */
+  
+   /* <!-- 3 task --> */
+  
+   .one {
+     width: 800px;
+     height: 500px;
+     background-color: rgb(133, 117, 117);
+     position: relative;
+   }
+  
+   .red {
+     width: 100px;
+     height: 100px;
+     background-color: red;
+     position: absolute;
+     left: 350px;
+  
+  
+   }
+  
+   .blue {
+     width: 100px;
+     height: 100px;
+     background-color: blue;
+     position: absolute;
+     left: 250px;
+     top: 100px;
+   }
+  
+   .black {
+     width: 100px;
+     height: 100px;
+     background-color: black;
+     position: absolute;
+     left: 350px;
+     top: 200px;
+   }
+  
+   .green {
+     width: 100px;
+     height: 100px;
+     background-color: green;
+     position: absolute;
+     left: 450px;
+     top: 100px;
+   }
+  
+   /* <!-- 3 task --> */
+  
+   /* <!-- 4 task --> */
+  
+   .div-text {
+    width: 700px;
+    overflow: hidden; /* Скрыть часть текста, которая не помещается в div */
+  }
+   
+  .text {
+    animation: marquee 15s linear infinite; /* Назначаем анимацию */
+    white-space: nowrap; /* Запрещаем перенос текста */
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(70%); } /* Начальное положение текста за пределами видимой области */
+    100% { transform: translateX(-100%); } /* Конечное положение текста за пределами видимой области */
+  }
+  
+  /* <!-- 4 task --> */
+  
+  /* <!-- 6 task --> */
+  
+  .item-product {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding:20px;
+  }
+  
+  .img-product {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .pro {
+    width: 350px;
+  }
+  
+  /* <!-- 6 task --> */
+  
+  
+  /* <!-- 7 task --> */
+  
+  .backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  /* top: 0; */
+  position: absolute;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 223, 223);
+  width: 70vw;
+  height: 130vh;
+  padding: 10px 10px;
+  margin: 0;
+  z-index: 999;
+  }
+  
+  .modal {
+    position: relative;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 30px;
+  }
+  
+  .btn-modal {
+    background-color: rgba(16, 171, 243, 0.495);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  .backdrop.show-modal {
+    display: flex;
+  opacity: 1;
+  visibility: visible;
+  }
+  
+  .container{
+    height: 40px;
+    width: 200px;
+    background-color: aquamarine;
+    padding-top: 15px;
+    padding-left: 60px;
+    border: 2px solid black;
+    border-radius: 10px;
+  
+  }
+  
+  .backdrop.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .div-close {
+    width: 35px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .btn-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background: none;
+   
+  }
+  
+  .close-img {
+    width: 15px;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+  }
+  
+  .textarea {
+    height: 100px;
+    width: 140px;
+    margin-top: 20px;
+  }
+  
+  .form {
+    padding-top: 150px;
+  }
+  
+  
+  
+  /* <!-- 7 task --> */
+  
+  
+  /* <!-- 8 task --> */
+  
+  .products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  .product-item {
+    border: 2px solid black;
+    text-align: center;
+    padding: 15px 20px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* <!-- 8 task --> */
+  
+  /* <!-- 9 task --> */
+  
+  .input-ls{
+    width: 200px;
+    height: 20px;
+  }
+  
+  .texteriea-ls{
+    width: 200px;
+    height: 70px;
+  }
+  
+  .btn-ls{
+    width: 120px;
+    height: 25px;
+  
+    background-color: rgba(40, 165, 224, 0.777);
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16pxpx;
+    margin-top: 10px;
+    margin-left: 35px;
+  }
+  
+  /* <!-- 9 task --> */
+  
+  
+  /* <!-- 10 task --> */
+  
+  .div-social {
+  margin-top: 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 300px;
+  }
+  
+  .list-social {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .item-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .link-sicial {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px; 
+      height: 50px; 
+      border-radius: 50%; 
+      background-color: black; 
+      border: 2px solid white;
+  }
+  
+  .svg-social {
+    width: 24px; 
+    height: 24px; 
+  }
+  
+  /* <!-- 10 task --> */
+  
+  /* <!-- 11 task --> */
+  
+  .div-set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(16, 116, 224);
+    border-radius: 10px;
+    border: 4px solid black;
+    color: white;
+    margin-bottom: 20px;
+    /* display: none; */
+    
+  }
+  
+  .is-visible {
+    display: block
+  }
+  
+  /* <!-- 11 task --> */
+  
+  /* <!-- 12 task --> */
+  
+  .main-container {
+    display: flex;
+    gap: 30px;
+    width: 230px;
+    height: 50px;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .div1 {
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .div2 {
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .div3 {
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .start-btn{
+    background-color: rgba(16, 171, 243, 0.495);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  
+  /* <!-- 12 task --> */
+  
+  /* <!-- 13 task --> */
+  
+  .wrapper {
     width: 700px;
     height: 300px;
     border: 2px solid black;
@@ -8,11 +430,11 @@
     background-image: url(../images/5488082.jpg);
     background-size: cover;
     background-position: center;
-}
-
-.dark-title {
+  }
+  
+  .dark-title {
     color: white;
-}
+  }
   
   .dark-btn {
   text-align: center;
@@ -49,15 +471,16 @@
       height: 100px;
       background-color: chartreuse;
   }
-
+  
   .black-dark {
       width: 100px;
       height: 100px;
       background-color: darkkhaki;
   }
-
+  
   .green-dark {
       width: 100px;
       height: 100px;
       background-color: magenta;
   }
+  

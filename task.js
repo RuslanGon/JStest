@@ -578,6 +578,25 @@ function onStartBtnClick() {
       resultEl.textContent = '😡 You loss 😡'
     }
   } )
-
-
 }
+
+/* <!-- 12 task --> */
+
+/* <!-- 13 task --> */
+
+ let switchMode = document.getElementById("switchMode");
+
+ switchMode.addEventListener("click", darkModel);
+
+ function darkModel() {
+   let dark = document.getElementById("theme");
+   if (dark.getAttribute("href") == "./css/style.css") {
+     dark.href = "./css/dark-mode.css";
+   } else {
+     dark.href = "./css/style.css";
+   }
+ }
+
+ /* <!-- 13 task --> */
+
+
