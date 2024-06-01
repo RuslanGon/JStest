@@ -597,6 +597,10 @@ function onStartBtnClick() {
    }
  }
 
+//  =====================
+ darkCheck = document.getElementById('darkCheck')
+ darkCheck.addEventListener('change', darkModel)
+
  /* <!-- 13 task --> */
 
 
