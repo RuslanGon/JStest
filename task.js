@@ -606,14 +606,24 @@ function onStartBtnClick() {
  /* <!-- 14 task --> */
 
  const goToBtn = document.querySelector('.go-top');
+ document.addEventListener('scroll', trackScroll)
 
  goToBtn.addEventListener('click', goTop);
  
  function goTop() {
-   if (window.pageYOffset > 0) {
-     window.scrollBy(0, -75); // Уменьшили шаг скролла для более плавного эффекта
+   if (document.pageYOffset > 0) {
+     document.scrollBy(0, -75); // Уменьшили шаг скролла для более плавного эффекта
      setTimeout(goTop, 0); // Увеличили интервал времени для медленного скролла
    }
  }
 
+ function trackScroll () {
+  const offset = document.pageYOffset
+  const coords = document.documentElement.clientHeight
+  if(offset > coords) {
+    goToBtn.classList.add('go-top-show')
+  }else {
+    goToBtn.classList.remove('go-top-show')
+  }
+ }
 
