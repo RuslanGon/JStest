@@ -603,4 +603,17 @@ function onStartBtnClick() {
 
  /* <!-- 13 task --> */
 
+ /* <!-- 14 task --> */
+
+ const goToBtn = document.querySelector('.go-top');
+
+ goToBtn.addEventListener('click', goTop);
+ 
+ function goTop() {
+   if (window.pageYOffset > 0) {
+     window.scrollBy(0, -75); // Уменьшили шаг скролла для более плавного эффекта
+     setTimeout(goTop, 0); // Увеличили интервал времени для медленного скролла
+   }
+ }
+
 
