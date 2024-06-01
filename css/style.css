@@ -427,6 +427,9 @@ margin: 0;
   border-radius: 5px;
   padding: 20px;
   text-align: center;
+  background-image: url(../images/v904-nunny-012.jpg);
+  background-size: cover; 
+  background-position: center;
 }
 
 .dark-btn {
