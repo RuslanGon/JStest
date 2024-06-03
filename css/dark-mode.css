@@ -487,3 +487,22 @@ body {
   .mt-normal-navi {
     margin-left: 600px;
   }
+
+   /* <!-- 13 task --> */
+
+   /* <!-- 14 task --> */
+
+   .go-top {
+    position: fixed;
+    right: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+  }
+  
+  .go-top-show {
+    display: block;
+  }
+
+   /* <!-- 14 task --> */
