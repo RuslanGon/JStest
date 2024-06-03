@@ -508,13 +508,12 @@ margin-top: 30px;
 /* <!-- 15 task --> */
 
 .swiper {
-  width: 1200px;
+  width: 1000px;
   height: 500px;
 }
 
 .swip-img {
 text-align: center;
-min-width: 100%;
 }
 
 .swiper-title {
@@ -525,6 +524,7 @@ min-width: 100%;
 }
 
 /* стрелки */
+
 
 .swiper-button-prev, .swiper-button-next {
   color: #000; /* Цвет стрелок */
