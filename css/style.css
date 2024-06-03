@@ -524,7 +524,33 @@ min-width: 100%;
   padding-bottom: 20px;
 }
 
-.df {
-  color: #000;
-  font-size: 100px;
+/* стрелки */
+
+.swiper-button-prev, .swiper-button-next {
+  color: #000; /* Цвет стрелок */
+  width: 50px; /* Ширина стрелки */
+  height: 50px; /* Высота стрелки */
 }
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 70px; /* Размер иконки стрелки */
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #000; /* Цвет стрелок */
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  color: #007aff; /* Цвет стрелок при наведении */
+}
+
+/* пагинация  */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #000; /* Цвет точки */
+  opacity: 1; /* Прозрачность точки */
+  border-radius: 50%; /* Делаем точки круглыми */
+  margin: 0 4px; /* Отступы между точками */
+}
+
