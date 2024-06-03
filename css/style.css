@@ -554,3 +554,7 @@ min-width: 100%;
   margin: 0 4px; /* Отступы между точками */
 }
 
+.swiper-pagination-bullet:hover {
+  background-color: #007aff; /* Цвет точки при наведении */
+}
+
