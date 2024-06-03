@@ -512,19 +512,34 @@ margin-top: 30px;
   height: 500px;
 }
 
+.swip-images {
+  width: 400px;
+  height: 300px
+}
+
 .swip-img {
 text-align: center;
+border: 1px solid black;
+padding: 10px;
+height: 305px;
 }
 
 .swiper-title {
   text-align: center;
   font-size: 36px;
-  color: #007aff;;
+  color: #007aff;
   padding-bottom: 20px;
 }
 
 /* стрелки */
 
+.swiper-button-prev{
+padding-top: 55px;
+}
+
+.swiper-button-next {
+  padding-top: 55px;
+}
 
 .swiper-button-prev, .swiper-button-next {
   color: #000; /* Цвет стрелок */
