@@ -492,7 +492,7 @@ margin-top: 30px;
 
 .go-top {
   position: fixed;
-  right: 150px;
+  right: 30px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -503,3 +503,28 @@ margin-top: 30px;
   display: block;
 }
 
+/* <!-- 14 task --> */
+
+/* <!-- 15 task --> */
+
+.swiper {
+  width: 1200px;
+  height: 500px;
+}
+
+.swip-img {
+text-align: center;
+min-width: 100%;
+}
+
+.swiper-title {
+  text-align: center;
+  font-size: 36px;
+  color: blue;
+  padding-bottom: 20px;
+}
+
+.df {
+  color: #000;
+  font-size: 100px;
+}

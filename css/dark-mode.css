@@ -494,7 +494,7 @@ body {
 
    .go-top {
     position: fixed;
-    right: 150px;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
