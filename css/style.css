@@ -520,7 +520,7 @@ min-width: 100%;
 .swiper-title {
   text-align: center;
   font-size: 36px;
-  color: blue;
+  color: #007aff;;
   padding-bottom: 20px;
 }
 
@@ -558,3 +558,6 @@ min-width: 100%;
   background-color: #007aff; /* Цвет точки при наведении */
 }
 
+.swiper-scrollbar-drag {
+  cursor: pointer;
+}

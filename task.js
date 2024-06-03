@@ -640,7 +640,30 @@ function onStartBtnClick() {
 
   pagination: {
     el: '.swiper-pagination',
-    clickable: true
+    clickable: true,
+    dynamicBullets: true, 
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+    // type: 'fraction' ,
+    // type: 'progressbar',
   },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true
+  },
+
+  mousewheel: {
+    sensitivity: 1,
+  },
+
+  slidesPerView: 2,
 
  })
