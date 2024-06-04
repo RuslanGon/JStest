@@ -664,7 +664,7 @@ function onStartBtnClick() {
     sensitivity: 1,
   },
 
-  slidesPerView: 3,
 
+  slidesPerView: 3,
 
  })
