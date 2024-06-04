@@ -667,4 +667,12 @@ function onStartBtnClick() {
 
   slidesPerView: 3,
 
+
+
+
+
+
+
+
+  
  })
